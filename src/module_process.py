@@ -2,8 +2,8 @@ import PyQt5.QtWidgets as Qtw
 import PyQt5.QtCore as Qtc
 import PyQt5.QtGui as Qtg
 import numpy as np
-import module_thread
-import module_2DSolver
+from . import module_thread
+from . import module_2DSolver
 
 
 class QProcess(Qtw.QWidget):

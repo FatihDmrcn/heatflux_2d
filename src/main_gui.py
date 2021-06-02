@@ -1,11 +1,11 @@
 import PyQt5.QtWidgets as Qtw
 import PyQt5.QtCore as Qtc
-import module_2DModel
-import module_preprocess
-import module_process
-import module_postprocess
-import module_tab
-import module_misc
+from . import module_2DModel
+from . import module_preprocess
+from . import module_process
+from . import module_postprocess
+from . import module_tab
+from . import module_misc
 
 
 params = {'increments': {'t': 0.01, 'x': 1., 'y': 1.},

@@ -1,6 +1,6 @@
 import numpy as np
 import PyQt5.QtCore as Qtc
-import module_diagonal
+from . import module_diagonal
 
 
 class Model2D(Qtc.QObject):
