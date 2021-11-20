@@ -87,7 +87,7 @@ class QProcess(Qtw.QWidget):
     def update_progress(self, current, final):
         progress = current/final
         self.signal_message.emit('Progress: {:.0%}'.format(progress))
-        self.progressBar.setValue(progress*100)
+        self.progressBar.setValue(int(progress*100))
 
     def calculate(self):
         self.button_calculate.setEnabled(False)

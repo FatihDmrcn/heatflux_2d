@@ -90,7 +90,7 @@ class QDrawArray(Qtw.QWidget):
             painter.setPen(pen)
             for y in np.linspace(1.5*self.dy, self.height()-1.5*self.dy, self.y_steps):
                 for x in np.linspace(1.5*self.dx, self.width()-1.5*self.dx, self.x_steps):
-                    painter.drawPoint(x, y)
+                    painter.drawPoint(int(x), int(y))
             painter.restore()
             # Draw lines
             painter.save()
